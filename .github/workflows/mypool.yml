@@ -31,5 +31,5 @@ jobs:
           dir
           git clone https://github.com/wwsq1149/pool
           start GetFreeProxies.exe
-          pf http 15 1000 Proxy\http.txt Proxy\http-pf.txt
+          start pf.exe http 15 1000 Proxy\http.txt Proxy\http-pf.txt
 
