@@ -27,12 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Get Files
-        run: git clone https://github.com/wwsq1149/pool
-      - name: Get Proxies
-        run: start D:\a\pool\pool\GetFreeProxies.exe
-      - name: HTTP Proxies
-        run: type D:\a\pool\pool\Proxy\http.txt
-      - name: Get Useful Proxies
-        run: D:\a\pool\pool\pf.exe http 15 1000 Proxy\http.txt Proxy\http-pf.txt
-      - name: Useful HTTP Proxies
-        run: type D:\a\pool\pool\Proxy\http-pf.txt
+        run: Start.bat
