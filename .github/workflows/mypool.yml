@@ -28,7 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Get Files
         run: |
-          git clone https://github.com/wwsq1149/pool,
-          start GetFreeProxies.exe,
+          dir
+          git clone https://github.com/wwsq1149/pool
+          start GetFreeProxies.exe
           pf http 15 1000 Proxy\http.txt Proxy\http-pf.txt
 
