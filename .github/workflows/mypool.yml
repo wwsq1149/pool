@@ -28,10 +28,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Get Files
         run: git clone https://github.com/wwsq1149/pool
-      # Runs a single command using the runners shell
-      - name: Get Proxies
-        run: D:\a\pool\pool\Start.bat
         
+      - name: Get Proxies
+        run: .\GetFreeProxies.exe
+        
+      - name: Fitting
+        run: .\pf.exe http 15 1000 .\Proxy\http.txt .\http-pf.txt
       - name: setup git config
         run: |
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
@@ -41,7 +43,7 @@ jobs:
       - name: commit
         run: |
           # Stage the file, commit and push
-          git add Proxy\http.txt
-          git add Proxy\http-pf.txt
+          git add .\Proxy\HTTP.txt
+          git add .\Proxy\HTTP-PF.txt
           git commit -m "new commit"
           git push origin main
