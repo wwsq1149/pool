@@ -31,3 +31,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Get Proxies
         run: D:\a\pool\pool\Start.bat
+        
+        -name: commit
+        run: |
+        git config --global user.email 1073234512@qq.com
+        git config --global user.name Cat.29
+        git add .
+        git commit -m "update" -a
+        
+        - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+        github_token: ${undefined{ secrets.GITHUB_TOKEN }}
+
