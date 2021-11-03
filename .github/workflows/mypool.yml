@@ -26,8 +26,16 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      - name: Get Files
+        run: git clone https://github.com/wwsq1149/pool
+        
+      # Runs a single command using the runners shell
+      - name: Run Dir
+        run: dir
+        
+      # Runs a single command using the runners shell
       - name: Run Get Free Proxies.exe
-        run: start "Get Free Proxies.exe"
+        run: "Get Free Proxies.exe"
         
       # Runs a single command using the runners shell
       - name: Run ProxyFiltering
