@@ -44,4 +44,4 @@ jobs:
           git add Proxy\http.txt
           git add Proxy\http-pf.txt
           git commit -m "new commit"
-          git push origin master
+          git push origin main
