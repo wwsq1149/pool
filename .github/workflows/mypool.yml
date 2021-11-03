@@ -27,4 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Get Files
-        run: Start.bat
+        run: git clone https://github.com/wwsq1149/pool
+      # Runs a single command using the runners shell
+      - name: Get Proxies
+        run: D:\a\pool\pool\Start.bat
