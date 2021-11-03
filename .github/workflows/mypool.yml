@@ -34,8 +34,8 @@ jobs:
         run: dir
         
       # Runs a single command using the runners shell
-      - name: Run Get Free Proxies.exe
-        run: "Get Free Proxies.exe"
+      - name: Run GetFreeProxies.exe
+        run: GetFreeProxies.exe
         
       # Runs a single command using the runners shell
       - name: Run ProxyFiltering
