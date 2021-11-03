@@ -30,8 +30,8 @@ jobs:
         run: |
           dir
           git clone https://github.com/wwsq1149/pool
-          cd D:\a\pool\pool
-          start GetFreeProxies.exe
-          type Proxy\http.txt
-          start "pf.exe http 15 1000 Proxy\http.txt Proxy\http-pf.txt"
-
+          D:\a\pool\poolGetFreeProxies.exe
+          dir
+          type D:\a\pool\pool\Proxy\http.txt
+          "D:\a\pool\pool\pf.exe http 15 1000 Proxy\http.txt Proxy\http-pf.txt
+          dir Proxy\
